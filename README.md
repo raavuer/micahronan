@@ -1,2 +1,2 @@
-# micahronan.com
+# micahronan
 My portfolio website
