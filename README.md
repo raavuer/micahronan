@@ -1,2 +1,2 @@
-# micahronan.ocm
+# micahronan.com
 My portfolio website
