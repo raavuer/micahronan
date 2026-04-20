@@ -1,35 +1,91 @@
+:root {
+  --primary-colour: #212121;
+  --accent-colour: #ffd214;
+  --bg-colour: #e0e0e0;
+  --section-spacing: 3rem;
+}
+
 body {
-  background-color: #212121;
+  background-color: var(--primary-colour);
+  color: var(--bg-colour);
   font-family: system-ui, sans-serif;
-  line-height: 1.5em;
+  line-height: 1.6;
+  margin: 0;
 }
+
 header {
-  font-family: "Nabla";
-  font-size: x-large;
+  font-family: "Nabla", sans-serif;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
   text-align: center;
+  padding: clamp(1.5vh, 4vh, 5vh) 0;
+  color: var(--bg-colour);
 }
+
 main {
-  background-color: #e0e0e0;
-  color: #212121;
-  width: 700px;
-  margin: 2.5vh auto;
-  padding: 2.5vh 5vw;
+  background-color: var(--bg-colour);
+  color: var(--primary-colour);
+  max-width: 700px;
+  margin: 4vh auto;
+  padding: clamp(2rem, 5vw, 3rem) clamp(1.5rem, 5vw, 5rem);
   border-radius: 15px;
-  section {
-    margin: 2.5vh 0px;
-  }
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
+
+main section {
+  margin-block: var(--section-spacing);
+}
+
+main h2 {
+  color: var(--primary-colour);
+  margin-bottom: 1rem;
+}
+
+main h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
 footer {
-  background-color: #212121;
-  color: #e0e0e0;
-  font-family: "Nabla";
-  padding: 1vh 1vw;
+  background-color: var(--primary-colour);
+  color: var(--bg-colour);
+  font-family: "Nabla", sans-serif;
+  text-align: center;
+  padding: 2vh 5vw;
+  font-size: 1.1rem;
+}
+
+footer h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-colour);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  font-family: system-ui, sans-serif;
+  font-style: normal;
+}
+
+footer a:hover {
+  background-color: var(--accent-colour);
+  color: var(--primary-colour);
 }
 
 .material-symbols-outlined {
-  color: #ffd214; /* Nabla font's color */
-  text-decoration: none;
+  font-size: 1.4rem;
 }
-.material-symbols-outlined:hover {
-  color: #e0e0e0;
+
+/* Responsive tweaks – kept minimal */
+@media (max-width: 600px) {
+  main {
+    margin: 2vh 4vw;
+    border-radius: 12px;
+  }
 }
