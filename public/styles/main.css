@@ -1,7 +1,35 @@
 body {
-  background-color: black;
-  color: white;
-  font: 1.5em 'Courier New', Courier, monospace;
+  background-color: #212121;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5em;
+}
+header {
+  font-family: "Nabla";
+  font-size: x-large;
   text-align: center;
-  align-content: center;
+}
+main {
+  background-color: #e0e0e0;
+  color: #212121;
+  width: 700px;
+  margin: 2.5vh auto;
+  padding: 2.5vh 5vw;
+  border-radius: 15px;
+  section {
+    margin: 2.5vh 0px;
+  }
+}
+footer {
+  background-color: #212121;
+  color: #e0e0e0;
+  font-family: "Nabla";
+  padding: 1vh 1vw;
+}
+
+.material-symbols-outlined {
+  color: #ffd214; /* Nabla font's color */
+  text-decoration: none;
+}
+.material-symbols-outlined:hover {
+  color: #e0e0e0;
 }
